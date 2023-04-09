@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox alignment="CENTER" prefHeight="444.0" prefWidth="632.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.testjavafatxit.PrimaryController">
+   <children>
+      <Label text="Hệ thống quản trị">
+         <styleClass>
+            <String fx:value="bg-warning" />
+            <String fx:value="text-danger" />
+            <String fx:value="h1" />
+            <String fx:value="b" />
+         </styleClass>
+      </Label>
+      
+      <Label text="-Trang Chủ-" />
+      <GridPane hgap="2.0" prefHeight="11.0" prefWidth="592.0" styleClass="page">
+          <TextFlow styleClass="alert, alert-success" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+              <Text styleClass="strong" text="Well..." />
+              <Text text="Chào mừng các bạn đã đến với Hệ thống quản trị ngân hàng BankNSolution " />
+            </TextFlow>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="16.0" minHeight="16.0" prefHeight="16.0" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Chuyển sang trang phụ">
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-primary" />
+         </styleClass></Button>
+      <Button fx:id="primaryButton1" onAction="#switchToSampler" text="Chuyển sang màn ví dụ BootstrapFx">
+         <styleClass>
+            <String fx:value="btn-lg" />
+            <String fx:value="btn-danger" />
+         </styleClass></Button>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
